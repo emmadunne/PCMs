@@ -45,6 +45,9 @@ ggplot(mydata, aes(x = log(mass),
 ## There are ultiple functions in several packages to fit a PGLS. 
 ## Here we will use caper, including its built-in function comparative.data()
 
+mydata2 <- rename(mydata, tiplabel = Binomial)
+head(mydata2)
+
 model_PGLS <- pgls(log(eyesize) ~ log(mass), 
                    comparative.data(mytree, mydata2, "tiplabel"), 
                    lambda="ML")
@@ -108,7 +111,7 @@ anova(model_PGLS)
 
 
 ## Now look at the model coefficients (i.e. the intercept and slope)
-summary(model.pgls)
+summary(model_PGLS)
 
 ## ___________________________________________________________________________________
 ## Reporting the results
@@ -120,7 +123,7 @@ summary(model.pgls)
 PGLS_plot <- ggplot(mydata, aes(x = log(mass), 
                                 y = log(eyesize))) +
   geom_point() +
-  geom_abline(slope = coefficients(model.pgls)[2], 
-              intercept = coefficients(model.pgls)[1]) +
+  geom_abline(slope = coefficients(model_PGLS)[2], 
+              intercept = coefficients(model_PGLS)[1]) +
   theme_minimal()
 PGLS_plot

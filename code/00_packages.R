@@ -3,7 +3,7 @@
 #   Introduction to Phylogenetic Comparative Methods
 #
 #   Emma Dunne (emma.dunne@fau.de)
-#   Late updated: August 2024
+#   Last updated: August 2024
 #
 # _________________________________________________________
 #
@@ -19,3 +19,4 @@ library(geiger)
 library(ape)
 library(phytools)
 library(caper)
+library(viridis)
