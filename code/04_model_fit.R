@@ -46,7 +46,7 @@ OU # check the output
 AICscores <- setNames(c(BM$opt$aic, OU$opt$aic), c("BM","OU"))
 aicw(AICscores)
 
-  ## ___________________________________________________________
-  ## Q: Which is the 'best' model?
-  ## Q: What does this tell you about frog eye size evolution?
-  ## ___________________________________________________________
+## ___________________________________________________________
+## Q: Which is the 'best' model?
+## Q: What does this tell you about frog eye size evolution?
+## ___________________________________________________________

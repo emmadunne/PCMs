@@ -3,7 +3,7 @@
 #   Introduction to Phylogenetic Comparative Methods
 #
 #   Emma Dunne (emma.dunne@fau.de)
-#   Last updated: August 2024
+#   Last updated: May 2025
 #
 # _________________________________________________________
 #
@@ -109,11 +109,12 @@ is.ultrametric(mytree)
 
 
 ## First, let's take a look at the tree:
+## Look at the tree summary:
+mytree
+
 ## Plot the tree as a circular/fan phylogeny with small labels
 plot(mytree, cex = 0.2, typ = "fan", no.margin = TRUE)
 
-## Look at the tree summary:
-mytree
 
 ## _________________________________________
 ## Q: How many frog species are on the tree?
@@ -141,7 +142,7 @@ p1 <- ggplot(mydata, aes(x = eyesize)) +
   theme_bw(base_size = 14)
 p1 
 
-## And now with it log-tranformed:
+## And now with it log-transformed:
 p2 <- ggplot(mydata, aes(x = log(eyesize))) +
   geom_histogram(bins = 20, fill = "chartreuse4") +
   theme_bw(base_size = 14)

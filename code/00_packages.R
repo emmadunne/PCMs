@@ -3,7 +3,7 @@
 #   Introduction to Phylogenetic Comparative Methods
 #
 #   Emma Dunne (emma.dunne@fau.de)
-#   Last updated: August 2025
+#   Last updated: May 2025
 #
 # _________________________________________________________
 #
