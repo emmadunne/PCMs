@@ -127,3 +127,4 @@ PGLS_plot <- ggplot(mydata, aes(x = log(mass),
               intercept = coefficients(model_PGLS)[1]) +
   theme_minimal()
 PGLS_plot
+
